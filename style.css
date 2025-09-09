@@ -2083,4 +2083,171 @@ Place this block at the END of your style.css
 }
 
 /* ===== END FIX ===== */
+/* ==== Fix white text on white background - Light Mode Overrides ==== */
+
+@media (prefers-color-scheme: light) {
+  /* Override dark backgrounds with light ones */
+  body,
+  .app-container,
+  .container,
+  .section,
+  .card,
+  .card__body,
+  .card__header,
+  .card__footer,
+  .terminal,
+  .terminal-header,
+  .terminal-content,
+  .chat-display,
+  .gui-content,
+  .web-content,
+  .gui-mockup,
+  .web-mockup,
+  .messages,
+  .message,
+  .message.received,
+  .message.sent,
+  .web-message,
+  .web-message.own,
+  .command-output,
+  .code,
+  .pre,
+  .code-block,
+  .key-display,
+  .encryption-demo,
+  .encryption-flow,
+  .interface-preview,
+  .interface-features,
+  .footer,
+  .footer-content,
+  .footer-section,
+  .footer-bottom {
+    background-color: var(--color-surface) !important;
+    color: var(--color-text) !important;
+  }
+
+  /* Fix code blocks */
+  code,
+  pre,
+  .code-block,
+  .key-section code,
+  .encryption-demo,
+  .encryption-flow {
+    background: var(--color-secondary) !important;
+    color: #2a2a2a !important;
+  }
+
+  /* Fix inputs and textareas */
+  input,
+  textarea,
+  .form-control,
+  .message-input input,
+  .web-input input {
+    background-color: var(--color-surface) !important;
+    color: var(--color-text) !important;
+    border: 1px solid var(--color-border) !important;
+  }
+
+  /* Buttons text */
+  button,
+  .btn,
+  .message-input button,
+  .web-input button {
+    color: var(--color-btn-primary-text) !important;
+  }
+
+  /* Chat bubbles text coloring */
+  .message.sent,
+  .web-message.own {
+    background-color: var(--color-primary) !important;
+    color: var(--color-btn-primary-text) !important;
+  }
+  .message.received,
+  .web-message {
+    background-color: var(--color-secondary) !important;
+    color: var(--color-text) !important;
+  }
+
+  /* Links */
+  a,
+  a:visited {
+    color: var(--color-primary) !important;
+  }
+
+  a:hover {
+    color: var(--color-primary-hover) !important;
+  }
+}
+
+/* Optional: support theme toggle with attribute */
+[data-color-theme="light"] body,
+[data-color-theme="light"] .app-container,
+[data-color-theme="light"] .container,
+[data-color-theme="light"] .section,
+[data-color-theme="light"] .card,
+[data-color-theme="light"] .card__body,
+[data-color-theme="light"] .card__header,
+[data-color-theme="light"] .card__footer,
+[data-color-theme="light"] .terminal,
+[data-color-theme="light"] .terminal-header,
+[data-color-theme="light"] .terminal-content,
+[data-color-theme="light"] .chat-display,
+[data-color-theme="light"] .gui-content,
+[data-color-theme="light"] .web-content,
+[data-color-theme="light"] .gui-mockup,
+[data-color-theme="light"] .web-mockup,
+[data-color-theme="light"] .messages,
+[data-color-theme="light"] .message,
+[data-color-theme="light"] .message.received,
+[data-color-theme="light"] .message.sent,
+[data-color-theme="light"] .web-message,
+[data-color-theme="light"] .web-message.own,
+[data-color-theme="light"] .command-output,
+[data-color-theme="light"] .code,
+[data-color-theme="light"] .pre,
+[data-color-theme="light"] .code-block,
+[data-color-theme="light"] .key-display,
+[data-color-theme="light"] .encryption-demo,
+[data-color-theme="light"] .encryption-flow,
+[data-color-theme="light"] .interface-preview,
+[data-color-theme="light"] .interface-features,
+[data-color-theme="light"] .footer,
+[data-color-theme="light"] .footer-content,
+[data-color-theme="light"] .footer-section,
+[data-color-theme="light"] .footer-bottom {
+  background-color: var(--color-surface) !important;
+  color: var(--color-text) !important;
+}
+
+/* Fix chat bubbles text coloring for theme toggle */
+[data-color-theme="light"] .message.sent,
+[data-color-theme="light"] .web-message.own {
+  background-color: var(--color-primary) !important;
+  color: var(--color-btn-primary-text) !important;
+}
+
+[data-color-theme="light"] .message.received,
+[data-color-theme="light"] .web-message {
+  background-color: var(--color-secondary) !important;
+  color: var(--color-text) !important;
+}
+
+/* Fix button text */
+[data-color-theme="light"] button,
+[data-color-theme="light"] .btn,
+[data-color-theme="light"] .message-input button,
+[data-color-theme="light"] .web-input button {
+  color: var(--color-btn-primary-text) !important;
+}
+
+/* Fix links in theme toggle */
+[data-color-theme="light"] a,
+[data-color-theme="light"] a:visited {
+  color: var(--color-primary) !important;
+}
+
+[data-color-theme="light"] a:hover {
+  color: var(--color-primary-hover) !important;
+}
+
 
