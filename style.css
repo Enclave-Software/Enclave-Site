@@ -1972,3 +1972,115 @@ Place this block at the END of your style.css
 /* ... you can repeat similar overrides for inputs, code, etc. if you have a manual theme toggle */
 
 /* --- END PATCH --- */
+/* ===== Fix: No more white text on white background =====
+   (Place at END of your style.css)
+*/
+
+/* LIGHT MODE: enforce readable colors for all main elements */
+@media (prefers-color-scheme: light) {
+
+  /* Global containers */
+  body,
+  .app-container,
+  .container,
+  .section,
+  .card,
+  .card__body,
+  .card__header,
+  .card__footer {
+    background: var(--color-background) !important;
+    color: var(--color-text) !important;
+  }
+
+  /* Common text */
+  h1, h2, h3, h4, h5, h6,
+  p, li, .section, .feature-card, .interface-features, .interface-content, .step,
+  label, .form-label, .footer, .footer-content, .footer-section, .footer-bottom {
+    color: var(--color-text) !important;
+    background: none !important;
+  }
+
+  /* Inputs and form fields */
+  input, textarea, .form-control, .message-input input, .web-input input {
+    background: var(--color-surface) !important;
+    color: var(--color-text) !important;
+    border: 1px solid var(--color-border) !important;
+  }
+
+  /* Code and pre/code blocks */
+  code, pre, .code-block, .key-section code, .encryption-result, .decryption-result,
+  .key-display, .command-output {
+    background: #f9f9fb !important;
+    color: #293040 !important;
+  }
+
+  /* Mocked chat/terminal UI backgrounds */
+  .terminal, .terminal-header, .terminal-content,
+  .chat-display, .gui-content, .web-content, .web-mockup, .gui-mockup,
+  .messages, .web-messages, .interface-preview, .interface-features {
+    background: var(--color-surface) !important;
+    color: var(--color-text) !important;
+  }
+
+  /* Chat bubbles: ensure contrasting text */
+  .message.sent, .web-message.own {
+    background: var(--color-primary) !important;
+    color: var(--color-btn-primary-text) !important;
+  }
+  .message.received, .web-message {
+    background: #f0f6fa !important;
+    color: var(--color-text) !important;
+  }
+
+  /* Footer */
+  .footer, .footer-content, .footer-section, .footer-bottom {
+    background: #f5f7fa !important;
+    color: #2a2a2a !important;
+  }
+
+  /* Links */
+  a, a:visited {
+    color: var(--color-primary) !important;
+  }
+}
+
+/* FALLBACK for explicit [data-color-scheme="light"] (if used) */
+[data-color-scheme="light"] body,
+[data-color-scheme="light"] .app-container,
+[data-color-scheme="light"] .container,
+[data-color-scheme="light"] .section,
+[data-color-scheme="light"] .card,
+[data-color-scheme="light"] .card__body,
+[data-color-scheme="light"] .card__header,
+[data-color-scheme="light"] .card__footer {
+  background: var(--color-background) !important;
+  color: var(--color-text) !important;
+}
+[data-color-scheme="light"] .terminal,
+[data-color-scheme="light"] .terminal-header,
+[data-color-scheme="light"] .terminal-content,
+[data-color-scheme="light"] .chat-display,
+[data-color-scheme="light"] .gui-content,
+[data-color-scheme="light"] .web-content,
+[data-color-scheme="light"] .web-mockup,
+[data-color-scheme="light"] .gui-mockup,
+[data-color-scheme="light"] .messages,
+[data-color-scheme="light"] .web-messages,
+[data-color-scheme="light"] .interface-preview,
+[data-color-scheme="light"] .interface-features {
+  background: var(--color-surface) !important;
+  color: var(--color-text) !important;
+}
+[data-color-scheme="light"] .message.sent,
+[data-color-scheme="light"] .web-message.own {
+  background: var(--color-primary) !important;
+  color: var(--color-btn-primary-text) !important;
+}
+[data-color-scheme="light"] .message.received,
+[data-color-scheme="light"] .web-message {
+  background: #f0f6fa !important;
+  color: var(--color-text) !important;
+}
+
+/* ===== END FIX ===== */
+
