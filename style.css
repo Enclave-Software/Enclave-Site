@@ -1909,3 +1909,61 @@ body {
     background: var(--color-success) !important;
     color: var(--color-btn-primary-text) !important;
 }
+/* --- Enforce Light-Mode Readability Patch --- */
+
+body,
+html,
+.app-container,
+.container,
+.section,
+.card,
+.card__body,
+.card__header,
+.card__footer {
+  background: var(--color-background) !important;
+  color: var(--color-text) !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, li, .section, .feature-card, .interface-features, .interface-content, .step,
+label, .form-label {
+  color: var(--color-text) !important;
+  background: none !important;
+}
+
+/* Inputs, chat, and message areas */
+input, textarea, .form-control, .message-input input, .web-input input {
+  background: var(--color-surface) !important;
+  color: var(--color-text) !important;
+  border: 1px solid var(--color-border) !important;
+}
+
+code, pre, .code-block, .key-section code, .encryption-result, .decryption-result,
+.key-display, .command-output {
+  background: #f9f9fb !important;
+  color: #2a2a2a !important;
+}
+
+/* Chat/terminal backgrounds */
+.chat-display, .terminal-content, .gui-content, .web-content,
+.message.sent, .message.received, .web-message, .web-message.own,
+.interface-preview, .interface-features, .footer, .footer-content, .footer-section, .footer-bottom {
+  background: var(--color-surface) !important;
+  color: var(--color-text) !important;
+}
+
+/* Buttons: only text color is overridden here, backgrounds left as in theme */
+.btn, button, .message-input button, .web-input button {
+  color: var(--color-btn-primary-text) !important;
+}
+
+/* Footer tweak */
+.footer, .footer-content, .footer-section, .footer-bottom {
+  background: #f5f7fa !important;
+  color: #2a2a2a !important;
+}
+
+a, a:visited {
+  color: var(--color-primary) !important;
+}
+/* --- End Patch --- */
