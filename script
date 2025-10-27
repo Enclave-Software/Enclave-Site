@@ -1,0 +1,41 @@
+Ansh Agarwal
+8:50 PM
+(0:00 – 0:25) — Introduction
+
+Ansh:
+“Hello — I’m Ansh, with my teammates Lenard and Chinglen. Today we’ll present our Vehicle Stopper System, designed to improve security at controlled checkpoints such as army camps. Our system detects a vehicle that attempts to breach a gate and automatically stops it, giving guards time to assess the threat.”
+
+(0:25 – 0:55) — Problem Statement (threat scenario)
+
+Lenard:
+“In high-security places, a sudden attempt to force a gate or rush an entry point can be dangerous. Guards need early, reliable automatic measures to delay or stop hostile vehicles while they respond. Our design provides a low-cost, automated layer that helps secure an entry point and buy critical seconds for personnel.”
+
+(0:55 – 1:25) — Components & Roles of Each Part
+
+Chinglen:
+“The system uses two distance sensors, a servo-driven barrier arm, warning lights, and an alarm. One sensor monitors a wider approach; the second watches the immediate breach zone. A push-button switch activates the system under guard control. When the system is idle a standby light is on; when triggered it executes graduated responses.”
+
+(1:25 – 1:55) — How the System Responds (normal intrusion)
+
+Ansh:
+“If a vehicle approaches into the outer zone (about 20 cm in our prototype scale), the system issues an alert: an orange light and an audible beep, and the barrier arm moves into a partial block position (45°). This warns the driver and notifies guards. The response remains active for a fixed interval so the team can assess.”
+
+(1:55 – 2:25) — How the System Responds (immediate breach)
+
+Lenard:
+“If a vehicle moves farther in — into the inner critical zone (about 15 cm in the prototype) — the system moves to full defensive mode: alternating red and blue warning lights, a continuous siren pattern, and the barrier arm moves to a stronger block position (70°). The aim is to stop or delay the vehicle while guards take action.”
+
+(2:25 – 2:50) — Demonstration Summary (what you’ll show)
+
+Chinglen:
+“In our demonstration we’ll show: switch OFF (system idle), switch ON (standby light), an outer-zone trigger producing warning actions, and an inner-zone trigger producing full alert and barrier engagement. The system holds each state for a set time so personnel can respond.”
+
+(2:50 – 3:15) — Benefits, Safety & Practical Notes
+
+Ansh:
+“Key benefits: it’s automatic, cost-effective, and adds a reliable physical and visual deterrent. Important safety notes: the device is a defensive aid — actual field use needs professional integration, appropriate fail-safes, and authorization from security authorities. Our prototype demonstrates the concept and is intended for controlled environments.”
+
+(3:15 – 3:30) — Closing & Team Credits
+
+Lenard & Chinglen (together):
+“Thank you for watching our presentation of the Vehicle Stopper System for checkpoint security.
