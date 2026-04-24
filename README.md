@@ -38,13 +38,13 @@ These projects are part of Project Enclave and may also have sub-projects under 
 - C++ (Arduino/embedded)
 - Dart / Flutter (desktop and mobile GUI)
 
-## License
-
-See [LICENSE](./LICENSE).
-
 ## Acknowledgements
 
 - Classmates at JJ School Montessori and Army Public School Khadakwasla.
 - GitHub for free hosting, tools and the student pack.
 - Saksham for the support, testing, debuging, and much **much** more.
+
+## License
+
+See [LICENSE](./LICENSE).
 
