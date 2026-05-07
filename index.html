@@ -252,6 +252,75 @@
     .ack-list li::before { content: "✦ "; color: var(--coral); }
     .ack-list li { color: var(--muted); font-size: 0.95rem; }
 
+    /* ── todo ── */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.75rem;
+}
+.todo-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.93rem;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  transition: border-color 0.2s;
+}
+.todo-list li:hover { border-color: var(--primary); }
+.todo-check {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 4px;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+}
+.todo-check.done {
+  background: var(--coral);
+  border-color: var(--coral);
+  color: #fff;
+}
+.todo-check.done::after { content: "✓"; }
+.todo-text.done {
+  text-decoration: line-through;
+  color: var(--faint);
+}
+.todo-tag {
+  margin-left: auto;
+  font-size: 0.68rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 99px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.todo-project {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 99px;
+  border: 1px solid var(--border);
+  color: var(--faint);
+  background: var(--bg);
+  white-space: nowrap;
+}
+
+.t-done    { background: rgba(249,178,148,.2); color: #c96b3a; }
+.t-wip     { background: rgba(193,108,134,.14); color: var(--primary); }
+.t-next    { background: rgba(51,93,126,.12); color: var(--blue); }
+.t-someday { background: rgba(109,92,125,.12); color: var(--purple); }
+
     /* ── footer ── */
     footer {
       text-align: center;
@@ -277,6 +346,7 @@
       <a href="#about">about</a>
       <a href="#tech">tech</a>
       <a href="#ack">credits</a>
+      <a href="#todo">todo</a>
       <button class="theme-btn" data-theme-toggle aria-label="toggle theme">◐</button>
     </nav>
   </header>
@@ -301,7 +371,7 @@
       <h2>why does this exist</h2>
       <p class="section-sub"><just a small text under teh title></p>
       <div class="mission-box">
-        <p>i live in manipur. internet shutdowns are real here. when they happen, apps like whatsapp and upi just stop working because they need central servers that are suddenly unreachable. that's a stupid design. i wanted to try building something different.</p>
+        <p>i live in manipur. internet shutdowns by the government are real here (even in the age of Ai slop). when they happen, apps like whatsapp and upi just stop working because they need central servers that are suddenly unreachable. that's a really stupid but easy design. i wanted to try building something different, something great.</p>
       </div>
       <div class="mission-box">
         <p>the goal is to reduce how much stuff depends on one server or one company staying online. communicate, organise, publish, host — but in a way where if one thing goes down, the rest can keep going.</p>
@@ -311,7 +381,7 @@
         <br>
         <p>so i will give this my all.</p>
       </div>
-      <p>ill complete it even if it takes me more than like 10 years i guess...</p>
+      <p>ill complete it even if it takes me more than like 10 years i guess... big Ai tech corps can go to hell.</p>
     </section>
 
     <hr />
@@ -371,14 +441,111 @@
     </section>
 
     <hr />
+    <hr />
+
+<section id="todo">
+  <h2>todo / roadmap</h2>
+  <p class="section-sub">// the to be done list. im lost.</p>
+  <ul class="todo-list">
+
+    <li>
+      <span class="todo-check done"></span>
+      <span class="todo-project">messenger</span>
+      <span class="todo-text done">get enclave messenger messages without getting stuck in a random loop</span>
+      <span class="todo-tag t-done">done</span>
+    </li>
+
+    <li>
+      <span class="todo-check done"></span>
+      <span class="todo-project">site</span>
+      <span class="todo-text done">build this website (the one you're looking at)</span>
+      <span class="todo-tag t-done">done</span>
+    </li>
+
+    <li>
+      <span class="todo-check"></span>
+      <span class="todo-project">site</span>
+      <span class="todo-text">fix the ui on small screens (yes i know)</span>
+      <span class="todo-tag t-wip">prob never lol</span>
+    </li>
+
+    <li>
+      <span class="todo-check"></span>
+      <span class="todo-project">messenger</span>
+      <span class="todo-text">add end-to-end encryption to messenger</span>
+      <span class="todo-tag t-wip">plugin made. integration and testing next</span>
+    </li>
+
+    <li>
+      <span class="todo-check"></span>
+      <span class="todo-project">docs</span>
+      <span class="todo-text">write proper documentation so future-me doesn't hate past-me</span>
+      <span class="todo-tag t-next">next</span>
+    </li>
+
+    <li>
+      <span class="todo-check"></span>
+      <span class="todo-project">docs</span>
+      <span class="todo-text">make a site and register it to a sub-domain</span>
+      <span class="todo-tag t-next">next</span>
+    </li>
+
+    <li>
+      <span class="todo-check"></span>
+      <span class="todo-project">messenger</span>
+      <span class="todo-text">open stable useable beta for enclave messenger. </span>
+      <span class="todo-tag t-next">next up</span>
+    </li>
+
+    <li>
+      <span class="todo-check"></span>
+      <span class="todo-project">stream</span>
+      <span class="todo-text">start building stream (site hosting layer)</span>
+      <span class="todo-tag t-next">next up</span>
+    </li>
+
+    <li>
+      <span class="todo-check"></span>
+      <span class="todo-project">stream</span>
+      <span class="todo-text">figure out how tor-style routing actually works at a low level</span>
+      <span class="todo-tag t-someday">someday</span>
+    </li>
+
+    <li>
+      <span class="todo-check"></span>
+      <span class="todo-project">node</span>
+      <span class="todo-text">design and build node (the blog/publishing piece)</span>
+      <span class="todo-tag t-someday">someday</span>
+    </li>
+
+    <li>
+      <span class="todo-check"></span>
+      <span class="todo-project">sphere</span>
+      <span class="todo-text">build sphere — the enclave browser that ties it all together</span>
+      <span class="todo-tag t-someday">someday</span>
+    </li>
+
+    <li>
+      <span class="todo-check"></span>
+      <span class="todo-project">me</span>
+      <span class="todo-text">sleep at a normal time at least once</span>
+      <span class="todo-tag t-someday">someday</span>
+    </li>
+
+  </ul>
+  <p style="margin-top:1.25rem; font-size:0.82rem; color:var(--faint);">// todo list? more like ta da! (funny? no? ok.)</p>
+</section>
 
     <section id="ack">
       <h2>acknowledgements</h2>
       <p class="section-sub">// people who actually helped</p>
       <ul class="ack-list">
         <li>my classmates at jj school montessori and army public school khadakwasla — for being there even when i wasn't great at it</li>
-        <li>github — free hosting, student pack, and not deleting my repos even when i commit at 3am</li>
-        <li>saksham — for support, testing, debugging, dealing with me, and more</li>
+        <li>github - free hosting, student pack, and not deleting my repos even when i commit at 3am</li>
+        <li>saksham - for support, testing, debugging, dealing with me, and more</li>
+        <li>signal - for open-sourcing their encryption methods</li>
+        <li><a href="https://silence.im/">silence</a> - for giving my head this idea.</li>
+        <li>government of manipur - for forcing me to use alternatives like silence and making me make this</li>
       </ul>
       <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--faint);">// and to one person who probably won't see this. you make the late nights worth it even though that's stupid. i know. sorry.</p>
     </section>
