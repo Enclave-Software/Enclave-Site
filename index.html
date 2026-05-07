@@ -253,15 +253,15 @@
     .ack-list li { color: var(--muted); font-size: 0.95rem; }
 
     /* ── todo ── */
-.todo-list {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  gap: 0.55rem;
-  margin-top: 0.75rem;
-}
-.todo-list li {
-  display: flex;
+    .todo-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 0.55rem;
+      margin-top: 0.75rem;
+    }
+    .todo-list li {
+      display: flex;
   align-items: flex-start;
   gap: 0.75rem;
   font-size: 0.93rem;
@@ -374,7 +374,7 @@
         <p>i live in manipur. internet shutdowns by the government are real here (even in the age of Ai slop). when they happen, apps like whatsapp and upi just stop working because they need central servers that are suddenly unreachable. that's a really stupid but easy design. i wanted to try building something different, something great.</p>
       </div>
       <div class="mission-box">
-        <p>the goal is to reduce how much stuff depends on one server or one company staying online. communicate, organise, publish, host — but in a way where if one thing goes down, the rest can keep going.</p>
+        <p>the goal is to reduce how much stuff depends on one server or one company staying online. communicate, organise, publish, host - but in a way where if one thing goes down, the rest can keep going.</p>
       </div>
       <div class="mission-box">
         <p>this is a very big project that i plan to keep trying over and over again if it doesn't work because my stupid brain decided to dream of a project as big as this.</p>
@@ -397,12 +397,12 @@
           <p class="small-note">by some, i mean like 3 people. i don't really have that many tech friends :(</p>
         </div>
         <div class="proj-card">
-          <span class="status s-future">next</span>
+          <span class="status s-soon">next</span>
           <h3>stream</h3>
           <p>site hosting. the idea is you can host a small site inside the enclave network. heavily inspired by tor-style distribution.</p>
         </div>
         <div class="proj-card">
-          <span class="status s-soon">future</span>
+          <span class="status s-future">future</span>
           <h3>node</h3>
           <p>a blog platform thing. kind of like a blog. for publishing without needing medium or substack.</p>
         </div>
@@ -419,10 +419,10 @@
     <section id="about">
       <h2>about me / this</h2>
       <p class="section-sub">// i'll be honest for once</p>
-      <p class="about-text">i'm in class 9. i started this project because i was bored and frustrated and needed something to work on. i have <strong>a lot</strong> going on mentally and building stuff is one of the few things that actually helps. robotics, electronics, coding — i do all of it mostly to not think about other things.</p>
-      <p class="about-text">i listen to breakcore and dark game soundtracks while i work. i stay up too late. sometimes i forget to eat. this project is basically what happens when someone like me decides to be productive instead of the alternative.</p>
+      <p class="about-text">i'm a student in class 9. i started this project because i was frustrated by the government blocking everything and needed something to work on. i have some things going on in my life, which includes building stuff like this. robotics, electronics, coding - i do them to, but not much, because i need to learn more.</p>
+      <p class="about-text">i listen to breakcore and dark game soundtracks while i work. i stay up too late. this project is basically what happens when someone like me decides to be productive instead of the alternative.</p>
       <p class="about-text">it's a hobby project. i can't promise perfect maintenance. but i genuinely care about this one so i'll keep working on it.</p>
-      <p class="about-text" style="font-size:0.85rem; margin-top:1rem; color:var(--faint);">// also if you somehow know me irl please don't make it weird</p>
+      <p class="about-text" style="font-size:0.85rem; margin-top:1rem; color:var(--faint);">// also, if you somehow know me irl please don't make it weird</p>
     </section>
 
     <hr />
@@ -432,12 +432,12 @@
       <p class="section-sub">// it's a mess but it's my mess</p>
       <p>i use whatever makes sense for the part i'm building. here's what's currently involved:</p>
       <div class="tech-row">
-        <span class="tech-tag">python — backend</span>
-        <span class="tech-tag">html / css / js — web gui</span>
-        <span class="tech-tag">c++ — arduino / embedded</span>
-        <span class="tech-tag">dart + flutter — future desktop</span>
+        <span class="tech-tag">python - backend and cli</span>
+        <span class="tech-tag">html / css / js - web gui</span>
+        <span class="tech-tag">c++ - arduino / embedded</span>
+        <span class="tech-tag">dart + flutter - future desktop</span>
       </div>
-      <p style="margin-top:1rem; font-size:0.85rem; color:var(--faint);">// no i don't use a framework for the frontend. i know. don't @ me</p>
+      <p style="margin-top:1rem; font-size:0.85rem; color:var(--faint);">// no i don't use a framework for the frontend. i know. should i?</p>
     </section>
 
     <hr />
@@ -499,6 +499,13 @@
 
     <li>
       <span class="todo-check"></span>
+      <span class="todo-project">messenger</span>
+      <span class="todo-text">open stable useable beta for enclave messenger. </span>
+      <span class="todo-tag t-next">next up</span>
+    </li>
+
+    <li>
+      <span class="todo-check"></span>
       <span class="todo-project">stream</span>
       <span class="todo-text">start building stream (site hosting layer)</span>
       <span class="todo-tag t-next">next up</span>
@@ -521,14 +528,7 @@
     <li>
       <span class="todo-check"></span>
       <span class="todo-project">sphere</span>
-      <span class="todo-text">build sphere — the enclave browser that ties it all together</span>
-      <span class="todo-tag t-someday">someday</span>
-    </li>
-
-    <li>
-      <span class="todo-check"></span>
-      <span class="todo-project">me</span>
-      <span class="todo-text">sleep at a normal time at least once</span>
+      <span class="todo-text">build sphere - the enclave browser that ties it all together</span>
       <span class="todo-tag t-someday">someday</span>
     </li>
 
@@ -540,11 +540,11 @@
       <h2>acknowledgements</h2>
       <p class="section-sub">// people who actually helped</p>
       <ul class="ack-list">
-        <li>my classmates at jj school montessori and army public school khadakwasla — for being there even when i wasn't great at it</li>
+        <li>my classmates at jj school montessori and army public school khadakwasla - for being there even when i wasn't great at it</li>
         <li>github - free hosting, student pack, and not deleting my repos even when i commit at 3am</li>
         <li>saksham - for support, testing, debugging, dealing with me, and more</li>
         <li>signal - for open-sourcing their encryption methods</li>
-        <li><a href="https://silence.im/">silence</a> - for giving my head this idea.</li>
+        <li><a href="https://silence.im/" target="_blank" rel="noopener noreferrer">silence</a> - for giving my head this idea.</li>
         <li>government of manipur - for forcing me to use alternatives like silence and making me make this</li>
       </ul>
       <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--faint);">// and to one person who probably won't see this. you make the late nights worth it even though that's stupid. i know. sorry.</p>
