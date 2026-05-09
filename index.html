@@ -89,11 +89,6 @@
       flex-wrap: wrap;
       align-items: center;
     }
-    nav a.nav-active {
-      background: var(--border);
-      color: var(--primary);
-      border-color: var(--primary);
-    }
     nav a {
       color: var(--muted);
       text-decoration: none;
@@ -596,24 +591,5 @@ footer a:hover {
       });
     })();
   </script>
-  <script>
-  const sections = document.querySelectorAll('section[id], div[id]');
-  const navLinks = document.querySelectorAll('nav a[href^="#"]');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navLinks.forEach(link => {
-          link.classList.remove('nav-active');
-          if (link.getAttribute('href') === '#' + entry.target.id) {
-            link.classList.add('nav-active');
-          }
-        });
-      }
-    });
-  }, { rootMargin: '-40% 0px -55% 0px' });
-
-  sections.forEach(s => observer.observe(s));
-</script>
 </body>
 </html>
