@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/wp-admin/:path*", "destination": "/api/tarpit" },
+    { "source": "/wp-login.php",    "destination": "/api/tarpit" },
+    { "source": "/xmlrpc.php",      "destination": "/api/tarpit" },
+    { "source": "/.env",            "destination": "/api/tarpit" },
+    { "source": "/:path*.php",      "destination": "/api/tarpit" }
+  ]
+}
