@@ -339,6 +339,13 @@
     }
     footer span { color: var(--coral); }
 
+    footer a {
+  color: var(--primary);
+}
+footer a:hover {
+  color: var(--coral);
+}
+
     @media (max-width: 500px) {
       .hero h1 { font-size: 2.1rem; }
       .projects-grid { grid-template-columns: 1fr; }
@@ -400,7 +407,7 @@
       <div class="projects-grid">
         <div class="proj-card">
           <span class="status s-active">very very early alpha</span>
-          <h3><a href="https://github.com/Project-Enclave/Enclave-Messenger">enclave messenger</a></h3>
+          <h3><a href="https://github.com/Project-Enclave/Enclave-Messenger" target="_blank" rel="noopener noreferrer">enclave messenger</a></h3>
           <p>messaging. this is the current one. works a bit already, some people are testing it. not public yet.</p>
           <p class="small-note">by some, i mean like 3 people. i don't really have that many tech friends :(</p>
         </div>
@@ -448,7 +455,6 @@
       <p style="margin-top:1rem; font-size:0.85rem; color:var(--faint);">// no i don't use a framework for the frontend. i know. should i?</p>
     </section>
 
-    <hr />
     <hr />
 
 <section id="todo">
@@ -550,12 +556,15 @@
       </ul>
       <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--faint);">// and to one person who probably won't see this. you make the late nights worth it even though that's stupid. i know. sorry.</p>
     </section>
+  <hr /> 
   </main>
 
   <footer>
     made by a <span>class 9 student</span> in india who probably should be sleeping right now<br/>
     project enclave &nbsp;·&nbsp; distributed by intent <br>
-    email: <a href="mailto:project.enclave@4d2.org">project.enclave@4d2.org</a>, <a href="mailto:chinglen@projectenclave.dev">chinglen@projectenclave.dev</a>  
+    <a href="http://github.com/Project-Enclave" target="_blank" rel="noopener noreferrer"></a><br>
+    email: <a href="mailto:project.enclave@4d2.org">project.enclave@4d2.org</a>, <a href="mailto:chinglen@projectenclave.dev">chinglen@projectenclave.dev</a><br>
+    last updated: 1530hrs  
   </footer>
 
   <script>
