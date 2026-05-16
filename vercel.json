@@ -4,6 +4,7 @@
     { "source": "/wp-login.php",    "destination": "/api/tarpit" },
     { "source": "/xmlrpc.php",      "destination": "/api/tarpit" },
     { "source": "/.env",            "destination": "/api/tarpit" },
-    { "source": "/:path*.php",      "destination": "/api/tarpit" }
+    { "source": "/:path*.php",      "destination": "/api/tarpit" },
+    { "source": "/wp-admin/install.php",      "destination": "/api/tarpit" }
   ]
 }
