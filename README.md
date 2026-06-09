@@ -53,7 +53,7 @@ See [LICENSE](./LICENSE).
 ## Note
 
 This project is **almost entirely** made by **Ai**
-Even tho this project was made almost entirely with the help of Ai, **your data is not be stored on our servers.**
+Even tho this project was made almost entirely with the help of Ai, **your data is not stored on our servers.**
 
 also, i was using codespaces because im working on 4gigs of ram and on an intel i3...
 dont judge me pls :(
